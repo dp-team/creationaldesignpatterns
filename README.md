@@ -1,11 +1,11 @@
 # Creational Design Patterns Demo
-This repo contains demo codes for creational design patterns using as 
+This repo contains demo codes for creational design patterns using, as 
 an example a fictitious virtual cafe named "the design-pattern
 cafe".
 
 We came up with this example to better illustrate the design patterns.
-For each pattern, we have devised a problem-scenario in the
-virtual cafe, that could potentially be solved with the pattern.
+For each pattern, we have devised a problem-scenario 
+that could potentially be solved with the pattern.
 
 ## Factory Method Pattern
 **Scenario:** The design-pattern cafe is growing popular 
