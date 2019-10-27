@@ -59,9 +59,17 @@ Lastly, we create a Chef class that will use one of this
 concrete classes to make the cake and return the created object.
 
 ## Prototype Pattern
-**Scenario:**
+**Scenario:** The waiters that serve at the cafe all have the
+same uniform but different tables. The owners of the cafe want an easy way of getting
+new waiters, without going through the trouble of starting
+from scratch.
 
-**Solution:**
+**Solution:** To solve this problem, we first create an abstract Prototype class with
+a copy method to enable cloning the object. We then create a
+Waiter class extending the Prototype class, implementing the
+cloning method. After that we create a WaiterFactory class
+that will use a Waiter object as a preset and clone it with 
+different table numbers.  
 
 ## Singleton Pattern
 **Scenario:**
