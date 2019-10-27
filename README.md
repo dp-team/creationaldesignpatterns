@@ -39,9 +39,17 @@ FactoryCreator to generate BranchFactory object based on
 the information passed.
 
 ## Object Pool Pattern
-**Scenario:**
+**Scenario:** The menus in the cafe are printed out for every
+new customer, and are thrown out when the customer leaves. 
+The owners have now realized this is very cost inefficient.
+They now want to reuse the menus and only print new ones 
+when necessary.  
 
-**Solution:**
+**Solution:** To solve this problem, we first create a generic
+object pool class with an abstract create method.Then we use
+this class to make a concrete EnglishMenuPool. Now we can use
+checkOut and checkIn methods to reuse menu object and create new
+ones when all objects are in in use. 
 
 ## Builder Pattern
 **Scenario:** There are different variates of cakes served 
