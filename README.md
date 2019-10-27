@@ -72,6 +72,12 @@ that will use a Waiter object as a preset and clone it with
 different table numbers.  
 
 ## Singleton Pattern
-**Scenario:**
+**Scenario:** The money received by customers of the cafe is
+stored in a cash register. It is important that there is only
+one cash register per cafe, so that the income of the cafe is
+accurately known. 
 
-**Solution:**
+**Solution:** To solve this problem, we implement CashRegister
+as a singleton. we make the constructor private so nobody
+can instantiate the class. And we implement a method getInstance
+to be called by user to obtain instance of the class.
