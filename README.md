@@ -44,9 +44,19 @@ the information passed.
 **Solution:**
 
 ## Builder Pattern
-**Scenario:**
+**Scenario:** There are different variates of cakes served 
+at the cafe. Even though all of them are cakes, they all 
+have different ingredients. The owners want an optimized way
+of making the cakes, that will save the chef's time and also
+easily add new cake types to the menu in the future.
 
-**Solution:**
+**Solution:** To solve this problem, we create a Cake class
+with all the required attributes. Then we create an abstract 
+CakeBuilder class, which has abstract methods for building
+each component of the cake. We then extend this class to make
+concrete classes for the different variety of cakes. 
+Lastly, we create a Chef class that will use one of this 
+concrete classes to make the cake and return the created object.
 
 ## Prototype Pattern
 **Scenario:**
