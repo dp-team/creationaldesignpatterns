@@ -1,4 +1,4 @@
-public abstract class Prototype implements Cloneable {
-    public abstract Prototype copy() throws CloneNotSupportedException;
+public abstract class Prototype {
+    public abstract Prototype copy();
 
 }

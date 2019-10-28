@@ -1,11 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class WaiterFactory {
-    private static Waiter p = new Waiter(1);
+    private static Waiter waiter = new Waiter(1, 1200.00, "RED");
 
     public static Waiter createWaiter(Integer tableNumber) {
-        Waiter clone = p.copy();
+        Waiter clone = waiter.copy();
         clone.setTableNumber(tableNumber);
         return clone;
     }

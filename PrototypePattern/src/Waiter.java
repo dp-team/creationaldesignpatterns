@@ -7,12 +7,36 @@ public class Waiter extends Prototype {
         this.tableNumber = tableNumber;
     }
 
+    public String getUniform() {
+        return uniform;
+    }
+
+    public void setUniform(String uniform) {
+        this.uniform = uniform;
+    }
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+
     private Integer tableNumber;
-    public Waiter(Integer tableNumber){
+    private String uniform;
+    private Double salary;
+
+    public Waiter(Integer tableNumber, Double salary, String uniform){
         this.tableNumber  = tableNumber;
+        this.salary = salary;
+        this.uniform = uniform;
     }
     public Waiter(Waiter waiter){
         this.tableNumber  = waiter.tableNumber;
+        this.salary = waiter.salary;
+        this.uniform = waiter.uniform;
+
     }
     @Override
     public Waiter copy() {
@@ -21,6 +45,6 @@ public class Waiter extends Prototype {
 
     @Override
     public String toString() {
-        return "Waiter at table--"+this.tableNumber.toString();
+        return "Waiter at table--"+this.tableNumber.toString()+"\nsalary- "+this.salary.toString()+"\nuniform-"+this.uniform;
     }
 }

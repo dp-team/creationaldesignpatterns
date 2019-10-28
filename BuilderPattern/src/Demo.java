@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class Demo {
     public static void main(String[] args) throws IOException {
         Chef chef = new Chef();
-        System.out.print("choose the language of the menu to display:");
+        System.out.print("choose cake:");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String cakeType = br.readLine();
         if(cakeType.equalsIgnoreCase("SwissRoll")){
