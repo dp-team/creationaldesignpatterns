@@ -1,4 +1,4 @@
-public class FranceBranch extends BranchFactory {
+public class FranceBranchFactory extends BranchFactory {
     @Override
     public StaffUniform getStaffUniform() {
         return new FranceStaffUniform();
